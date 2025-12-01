@@ -1,0 +1,15 @@
+com\library\analytics_service\AnalyticsServiceApplication.class
+com\library\analytics_service\repository\UsageStatisticRepository.class
+com\library\analytics_service\dto\UsageStatsResponse.class
+com\library\analytics_service\exception\GlobalExceptionHandler.class
+com\library\analytics_service\listener\BookingEventListener.class
+com\library\analytics_service\entity\UsageStatistic.class
+com\library\analytics_service\aspect\LoggingAspect.class
+com\library\analytics_service\controller\AnalyticsController.class
+com\library\analytics_service\dto\BookingEvent.class
+com\library\analytics_service\repository\AnalyticsEventRepository.class
+com\library\analytics_service\config\RabbitMQConfig.class
+com\library\analytics_service\entity\AnalyticsEvent.class
+com\library\analytics_service\security\SecurityConfig.class
+com\library\analytics_service\exception\GlobalExceptionHandler$ErrorResponse.class
+com\library\analytics_service\service\AnalyticsService.class

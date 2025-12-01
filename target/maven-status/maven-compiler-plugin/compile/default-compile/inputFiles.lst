@@ -1,0 +1,14 @@
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\AnalyticsServiceApplication.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\aspect\LoggingAspect.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\config\RabbitMQConfig.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\controller\AnalyticsController.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\dto\BookingEvent.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\dto\UsageStatsResponse.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\entity\AnalyticsEvent.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\entity\UsageStatistic.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\exception\GlobalExceptionHandler.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\listener\BookingEventListener.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\repository\AnalyticsEventRepository.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\repository\UsageStatisticRepository.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\security\SecurityConfig.java
+C:\Users\saifh\Desktop\AspectProject\library-system\analytics-service\src\main\java\com\library\analytics_service\service\AnalyticsService.java
