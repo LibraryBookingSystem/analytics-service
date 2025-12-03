@@ -10,3 +10,6 @@ COPY --from=build /app/target/*.jar app.jar
 EXPOSE 3007
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
+
+
+

@@ -48,3 +48,6 @@ public interface UsageStatisticRepository extends JpaRepository<UsageStatistic, 
                                                          @Param("endDate") LocalDate endDate);
 }
 
+
+
+

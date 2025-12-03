@@ -56,3 +56,6 @@ public interface AnalyticsEventRepository extends JpaRepository<AnalyticsEvent, 
                                 @Param("endTime") LocalDateTime endTime);
 }
 
+
+
+
