@@ -59,3 +59,4 @@ public interface AnalyticsEventRepository extends JpaRepository<AnalyticsEvent, 
 
 
 
+
