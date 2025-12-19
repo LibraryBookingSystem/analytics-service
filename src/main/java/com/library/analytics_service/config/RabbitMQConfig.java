@@ -31,12 +31,22 @@ public class RabbitMQConfig {
     public static final String BOOKING_CHECKED_IN_ROUTING_KEY = "booking.checked_in";
     public static final String BOOKING_NO_SHOW_ROUTING_KEY = "booking.no_show";
     
+    // Audit events exchange
+    public static final String AUDIT_EXCHANGE = "audit.events";
+    public static final String AUDIT_LOG_QUEUE = "analytics.audit.log";
+    public static final String AUDIT_LOG_ROUTING_KEY = "audit.log";
+    
     /**
-     * Declare topic exchange for booking events (if not exists)
+     * Declare topic exchanges (if not exists)
      */
     @Bean
     public TopicExchange bookingExchange() {
         return new TopicExchange(BOOKING_EXCHANGE, true, false);
+    }
+    
+    @Bean
+    public TopicExchange auditExchange() {
+        return new TopicExchange(AUDIT_EXCHANGE, true, false);
     }
     
     /**
@@ -67,8 +77,13 @@ public class RabbitMQConfig {
         return new Queue(BOOKING_NO_SHOW_QUEUE, true);
     }
     
+    @Bean
+    public Queue auditLogQueue() {
+        return new Queue(AUDIT_LOG_QUEUE, true);
+    }
+    
     /**
-     * Bind queues to exchange
+     * Bind queues to exchanges
      */
     @Bean
     public Binding bookingCreatedBinding() {
@@ -108,6 +123,14 @@ public class RabbitMQConfig {
             .bind(bookingNoShowQueue())
             .to(bookingExchange())
             .with(BOOKING_NO_SHOW_ROUTING_KEY);
+    }
+    
+    @Bean
+    public Binding auditLogBinding() {
+        return BindingBuilder
+            .bind(auditLogQueue())
+            .to(auditExchange())
+            .with(AUDIT_LOG_ROUTING_KEY);
     }
     
     /**
